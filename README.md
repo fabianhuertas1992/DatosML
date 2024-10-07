@@ -14,7 +14,8 @@ El repositorio contiene notebooks Jupyter desarrollados en Google Colab para el 
 
 Notebooks para preprocesamiento de datos y generación de características.
 
-**Carpeta 2: Machine Learning **
+**Carpeta 2: Machine Learning**
 
 Notebooks para la implementación de modelos de machine learning (Regresión Lineal, Random Forest, XGBoost) y la predicción de biomasa.
 Cada notebook puede ser ejecutado directamente en Google Colab, asegurando que las dependencias necesarias estén instaladas previamente.
+
