@@ -20,7 +20,7 @@ Notebooks para la implementación de modelos de machine learning (Regresión Lin
 
 Cada notebook puede ser ejecutado directamente en Google Colab, asegurando que las dependencias necesarias estén instaladas previamente.
 
-### **Datos**
+### **Carpeta 1: Datos**
 
 **Multidatos.ipynb**
   
