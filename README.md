@@ -48,6 +48,25 @@ El archivo **Multidatos.ipynb** realiza las siguientes acciones:
 **Ejecuta este notebook en Google Colab**:  
 <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Datos/Multidatos.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+----------
+
+2. **Query_DB.ipynb**  
+   Este notebook realiza consultas a múltiples bases de datos (Oracle, KoboToolbox, IoT a través de AWS) y procesa las respuestas para generar datasets y visualizaciones. También se aplican modelos de aprendizaje para realizar análisis y simulaciones de los datos obtenidos. 
+
+   **Funcionalidades principales:**
+   - **Oracle**: Consulta datos de imágenes y NDVI a través de un sistema de base de datos, procesando los resultados para crear visualizaciones y estadísticas sobre vegetación y análisis geoespacial.
+   - **KoboToolbox**: Recupera datos de geolocalización para su análisis y visualización en un mapa con datos catastrales de parcelas.
+   - **IoT | AWS**: Consulta dispositivos IoT que registran valores de temperatura y humedad, almacena los datos en S3 y los procesa para obtener estadísticas y gráficos de estos valores por dispositivo.
+
+   **Visualizaciones**:
+   - Mapa interactivo con datos catastrales y ubicaciones GPS.
+   - Gráficos de barras y de calor para mostrar la distribución de temperatura y humedad de los dispositivos.
+   - Gráfico 3D interactivo que visualiza los datos de temperatura y humedad por dispositivo.
+   - Simulación de temperaturas a lo largo del tiempo con gráficos de tendencias.
+
+   **Ejecuta este notebook en Google Colab**:  
+   <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Datos/Query_DB.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 ---
 
-  
+
