@@ -67,6 +67,54 @@ El archivo **Multidatos.ipynb** realiza las siguientes acciones:
    **Ejecuta este notebook en Google Colab**:  
    <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Datos/Query_DB.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+-----------------------------------------------------------------------------------------------------------
+
+### **Carpeta 2: Machine Learning**
+
+Esta carpeta contiene notebooks que implementan y comparan diferentes modelos de machine learning para predecir la biomasa aérea (AGB) en Mg/ha. Los modelos evaluados incluyen **Regresión Lineal**, **Random Forest** y **XGBoost**. A continuación, se detallan los contenidos de cada archivo en esta carpeta:
+
+1. **Modelo_ML.ipynb**  
+   Este notebook se enfoca en la **extracción, transformación y carga de datos (ETL)** desde diversas fuentes, incluyendo **KoboToolbox**. Después de procesar los datos, se entrenan diferentes modelos de machine learning para predecir la biomasa en función de variables como el NDVI, el diámetro a la altura del pecho (DAP) y la altura de los árboles.  
+   **Principales características**:
+   - Procesamiento de datos desde KoboToolbox.
+   - Comparación inicial de modelos de aprendizaje automático.
+   
+   **Ejecuta este notebook en Google Colab**:  
+   <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Machine%20Learning/Modelo_ML.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+2. **ML_comparativos.ipynb**  
+   Este notebook implementa una **comparación detallada de tres modelos de machine learning** (Regresión Lineal, Random Forest y XGBoost) para predecir la biomasa en Mg/ha.  
+   **Características del notebook**:
+   - **Carga y preprocesamiento** de datos: Se eliminan valores nulos y se generan nuevas características como NDVI_DAP y HT_NDVI.
+   - **Selección de características clave**: NDVI, DAP, altura, NDVI_DAP y HT_NDVI.
+   - **Comparación de modelos**: Se evalúan los modelos utilizando **MSE** y **R²**, con visualizaciones gráficas que muestran las diferencias entre las predicciones y los valores reales de biomasa.
+   - **Conclusiones**: Se visualiza cómo cada modelo captura la relación entre las características y la biomasa.
+
+   **Ejecuta este notebook en Google Colab**:  
+   <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Machine%20Learning/ML_comparativos.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+3. **ML_Parcelas.ipynb**  
+   Este notebook realiza el entrenamiento de modelos agrupando los datos por parcelas, lo que permite observar la **variabilidad espacial** en las predicciones de biomasa.  
+   **Aspectos clave**:
+   - **Agrupación de datos por parcelas**: Permite que los modelos enfoquen el análisis en áreas específicas.
+   - **Modelos utilizados**: Se implementan **Regresión Lineal**, **Random Forest** y **XGBoost**.
+   - **Evaluación de rendimiento**: Se evalúan los modelos con métricas como **R²** y **MSE**.
+   - **Visualización de resultados**: Los valores predichos por cada modelo se comparan gráficamente con los valores reales de biomasa.
+
+   **Ejecuta este notebook en Google Colab**:  
+   <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Machine%20Learning/ML_Parcelas.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+4. **ML_Parcelas(entrenamiento).ipynb**  
+   Similar al notebook **ML_Parcelas.ipynb**, este archivo entrena modelos de machine learning para predecir la biomasa en función de características como NDVI, DAP y altura de los árboles, pero se enfoca más en el proceso de entrenamiento.  
+   **Aspectos clave**:
+   - **Problemas en los datos**: Se concluye que los datos actuales no son suficientes para obtener predicciones precisas, lo que sugiere la necesidad de más datos o mejores técnicas de preprocesamiento.
+   - **Comparación entre modelos**: Al igual que en otros notebooks, se utilizan **XGBoost**, **Random Forest** y **Regresión Lineal**.
+
+   **Ejecuta este notebook en Google Colab**:  
+   <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Machine%20Learning/ML_Parcelas(entrenamiento).ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 ---
+
+
 
 
