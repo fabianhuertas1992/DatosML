@@ -113,8 +113,95 @@ Esta carpeta contiene notebooks que implementan y comparan diferentes modelos de
    **Ejecuta este notebook en Google Colab**:  
    <a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Machine%20Learning/ML_Parcelas(entrenamiento).ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
----
+------------------------------------------------------------------------------
 
+
+# Predicción de Biomasa Aérea con Modelos de Machine Learning
+
+**Entrenamiento.ipynb** es un notebook que realiza la predicción de biomasa aérea (AGB) utilizando tres modelos de machine learning: **Regresión Lineal**, **Random Forest** y **XGBoost**. El enfoque de este análisis es generar un polígono de estudio basado en puntos de muestreo y realizar predicciones de AGB dentro de ese polígono.
+
+## Descripción del Proyecto
+
+Este notebook está diseñado para entrenar y aplicar modelos de machine learning con el fin de predecir la biomasa aérea en Mg/ha utilizando datos forestales. Las predicciones se realizan en una cuadrícula generada dentro de un área de interés, que se define utilizando una envolvente convexa (convex hull) basada en los puntos de muestreo.
+
+### Características Clave
+
+- **Modelos Utilizados**: Se entrenan tres modelos de machine learning para la predicción de la biomasa:
+  - **Regresión Lineal**
+  - **Random Forest**
+  - **XGBoost**
+  
+- **Datos de Entrada**:
+  - Coordenadas GPS de los árboles.
+  - Diámetro del árbol a la altura del pecho (DAP).
+  - Altura de los árboles.
+  - Año de muestreo.
+
+- **Generación de Polígono**:
+  - Se utiliza una envolvente convexa para generar un polígono que cubre el área de interés basada en los puntos de muestreo.
+  - Dentro de este polígono, se genera una cuadrícula de puntos, a los que se les asignan valores promedio de diámetro, altura y año.
+
+- **Predicción de Biomasa Aérea (AGB)**:
+  - Los modelos previamente entrenados son utilizados para predecir la AGB en cada punto de la cuadrícula generada dentro del polígono.
+  
+- **Visualización de Resultados**:
+  - Los resultados se agrupan en intervalos de AGB y se visualizan en tres mapas, uno por cada modelo. Cada mapa colorea los puntos del polígono según el intervalo de AGB predicho, facilitando la comparación visual entre los tres modelos.
+
+## Instalación de Librerías
+
+Para ejecutar este notebook, asegúrate de instalar las siguientes librerías en tu entorno de trabajo:
+
+```bash
+!pip install rasterio
+!pip install SQLAlchemy aiomysql
+!pip install geopandas
+!pip install folium
+!pip install boto3
+```
+
+## Ejecución del Notebook
+
+Puedes ejecutar este notebook directamente en Google Colab utilizando el siguiente enlace:
+
+<a href="https://colab.research.google.com/github/fabianhuertas1992/DatosML/blob/main/Entrenamiento.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+## Resultados y Visualización
+
+Los resultados de las predicciones se visualizan en forma de mapas, donde cada punto dentro del polígono está coloreado según el rango de AGB predicho:
+
+- **Mapa 1**: Predicción de biomasa utilizando el modelo de **Regresión Lineal**.
+- **Mapa 2**: Predicción de biomasa utilizando el modelo de **Random Forest**.
+- **Mapa 3**: Predicción de biomasa utilizando el modelo de **XGBoost**.
+
+Estos mapas facilitan la comparación entre los modelos y permiten evaluar cómo cada uno captura la variabilidad espacial en la biomasa aérea.
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Conclusión General
+
+El conjunto de notebooks proporcionados implementa un análisis profundo para la **predicción de biomasa aérea (AGB)** en un área forestal utilizando técnicas de machine learning, basadas en modelos como **Regresión Lineal**, **Random Forest**, y **XGBoost**. A lo largo de los notebooks, se abordaron diferentes enfoques para predecir la biomasa, incluyendo la agrupación por parcelas, el uso de cuadrículas geoespaciales y la visualización de los resultados en mapas interactivos.
+
+### Logros
+1. **Extracción y Preprocesamiento de Datos**: 
+   - Los datos fueron obtenidos de fuentes diversas como **KoboToolbox** y se realizaron transformaciones importantes como la generación de nuevas características basadas en el **NDVI**, el diámetro a la altura del pecho (DAP), y la altura de los árboles.
+   
+2. **Implementación y Comparación de Modelos**: 
+   - Se implementaron y compararon modelos de machine learning para evaluar su rendimiento en la predicción de biomasa. Aunque los modelos presentaron algunas diferencias en su capacidad de predicción, los resultados mostraron que las variaciones entre los modelos pueden depender de los datos disponibles y las características utilizadas.
+   
+3. **Visualización de Resultados**: 
+   - Los resultados se presentaron en forma de **mapas interactivos** que permiten visualizar la distribución espacial de la biomasa aérea, proporcionando una herramienta útil para la comparación entre los modelos y para la toma de decisiones en la gestión forestal.
+
+### Limitaciones y Recomendaciones
+Sin embargo, una conclusión clave derivada de este trabajo es que **la cantidad de datos utilizados es insuficiente** para obtener predicciones precisas y confiables. La variabilidad y cantidad limitada de los datos actuales limitan la capacidad de los modelos para generalizar y predecir adecuadamente la biomasa en un área más amplia o en condiciones más complejas.
+
+**Recomendaciones**:
+- **Ampliar el conjunto de datos**: Es crucial aumentar la cantidad y la variedad de los datos disponibles, especialmente para cubrir una mayor cantidad de muestras y condiciones ambientales. Esto proporcionará a los modelos un conjunto de entrenamiento más robusto que les permita hacer predicciones más precisas.
+- **Mejorar el preprocesamiento de datos**: Un enfoque más detallado en la limpieza y generación de características puede ayudar a mejorar la precisión de los modelos.
+- **Evaluación con más métricas**: Incluir más métricas de evaluación para obtener una visión más clara del rendimiento de los modelos bajo diferentes escenarios.
+
+En conclusión, aunque los modelos implementados han mostrado potencial para predecir la biomasa aérea, el éxito de estos algoritmos depende en gran medida de la cantidad y calidad de los datos de entrada. **Para avanzar en la precisión de las predicciones y la utilidad práctica de estos modelos, se requiere la recolección de más datos y la exploración de técnicas adicionales de machine learning y preprocesamiento**.
+
+--------------------------------------------
 
 
 
