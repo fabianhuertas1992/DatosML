@@ -212,7 +212,9 @@ Sin embargo, una conclusión clave derivada de este trabajo es que **la cantidad
 - **Mejorar el preprocesamiento de datos**: Un enfoque más detallado en la limpieza y generación de características puede ayudar a mejorar la precisión de los modelos.
 - **Evaluación con más métricas**: Incluir más métricas de evaluación para obtener una visión más clara del rendimiento de los modelos bajo diferentes escenarios.
 
-En conclusión, aunque los modelos implementados han mostrado potencial para predecir la biomasa aérea, el éxito de estos algoritmos depende en gran medida de la cantidad y calidad de los datos de entrada. **Para avanzar en la precisión de las predicciones y la utilidad práctica de estos modelos, se requiere la recolección de más datos y la exploración de técnicas adicionales de machine learning y preprocesamiento**.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Aunque los modelos implementados han mostrado potencial para predecir la biomasa aérea, el éxito de estos algoritmos depende en gran medida de la cantidad y calidad de los datos de entrada. **Para avanzar en la precisión de las predicciones y la utilidad práctica de estos modelos, se requiere la recolección de más datos y la exploración de técnicas adicionales de machine learning y preprocesamiento**.
 
 --------------------------------------------
 
