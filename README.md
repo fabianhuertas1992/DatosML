@@ -4,7 +4,20 @@ Se realiza captura de fuentes de datos para realizar diferentes modelos de apren
 
 Este proyecto captura y utiliza diversas fuentes de datos para desarrollar modelos de aprendizaje automático enfocados en la predicción de biomasa aérea (AGB) en áreas geográficas.
 
-Se implementan técnicas como la Regresión Lineal, Random Forest y XGBoost, evaluando la precisión mediante métricas como el MSE y R². Adicionalmente, se visualizan predicciones de biomasa dentro de un polígono geoespacial, y se aplican técnicas de agrupamiento K-Means para calcular biomasa y carbono por parcela, brindando un enfoque integral en la gestión de biomasa forestal.
+En este proyecto se utiliza **machine learning** para predecir la **biomasa aérea (AGB)** en áreas forestales, un indicador clave para la gestión de recursos naturales. A través de modelos como **Regresión Lineal**, **Random Forest** y **XGBoost**, se exploran técnicas que combinan datos geoespaciales, como el **NDVI** y el diámetro de los árboles (DAP), con la altura y el año de la muestra, para generar predicciones en polígonos de estudio.
+
+### Lo que Hacemos
+
+1. **Datos Reales**: Usamos datos forestales y satelitales (NDVI) para construir modelos que predicen biomasa.
+2. **Modelos Comparados**: Probamos tres modelos de machine learning, visualizando sus predicciones en mapas interactivos.
+3. **Limitaciones**: Aclaramos que, debido a la **escasez de datos**, los modelos no alcanzan su máximo potencial.
+
+### Recomendaciones
+
+Para mejorar los resultados, se recomienda **ampliar la cantidad de datos** y mejorar el preprocesamiento, permitiendo a los modelos generar predicciones más robustas y precisas.
+
+
+
 
 ## Estructura del Proyecto
 
