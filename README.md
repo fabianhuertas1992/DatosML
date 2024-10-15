@@ -190,7 +190,7 @@ Estos mapas facilitan la comparación entre los modelos y permiten evaluar cómo
 ---------------
 
 
-### Análisis de Datos de IoT
+# Análisis de Datos de IoT
 
 En este proyecto, trabajamos con datos provenientes de sensores **IoT** que miden variables como la **temperatura** y la **humedad** en un entorno determinado. Estos datos fueron analizados con el objetivo de predecir las condiciones ambientales en el futuro, utilizando dos modelos de **machine learning**: **Random Forest** y **ARIMA**.
 
