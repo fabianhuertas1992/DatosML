@@ -187,6 +187,37 @@ Los resultados de las predicciones se visualizan en forma de mapas, donde cada p
 - **Mapa 3**: Predicción de biomasa utilizando el modelo de **XGBoost**.
 
 Estos mapas facilitan la comparación entre los modelos y permiten evaluar cómo cada uno captura la variabilidad espacial en la biomasa aérea.
+---------------
+
+
+### Análisis de Datos de IoT
+
+En este proyecto, trabajamos con datos provenientes de sensores **IoT** que miden variables como la **temperatura** y la **humedad** en un entorno determinado. Estos datos fueron analizados con el objetivo de predecir las condiciones ambientales en el futuro, utilizando dos modelos de **machine learning**: **Random Forest** y **ARIMA**.
+
+El uso de dispositivos **IoT** permite la recolección continua y en tiempo real de datos ambientales, lo que proporciona una base sólida para realizar análisis predictivos y entender cómo estas variables se comportarán en los próximos días. Los sensores de IoT ofrecen un flujo constante de información que se puede utilizar para anticipar cambios en el clima o en las condiciones locales de manera más eficiente.
+
+### Procesos Realizados:
+
+1. **Cargar y Preprocesar los Datos**:
+   - Los datos de los sensores **IoT** fueron organizados y convertidos a un formato numérico adecuado para su análisis.
+   - Se eliminaron valores no válidos y se reorganizaron los datos de **temperatura** y **humedad** para facilitar su uso en los modelos de predicción.
+   
+2. **Ingeniería de Características**:
+   - Se crearon características adicionales a partir de los datos originales, como diferencias entre mediciones consecutivas, promedios móviles y características cíclicas (hora del día y mes del año). Estas características son esenciales para mejorar la capacidad predictiva de los modelos.
+   
+3. **Modelos de Predicción**:
+   - Utilizamos dos tipos de modelos de machine learning para realizar las predicciones:
+     - **Random Forest**: Un modelo basado en la construcción de múltiples árboles de decisión para hacer predicciones robustas.
+     - **ARIMA**: Un modelo especializado en series temporales, que analiza los patrones en los datos a lo largo del tiempo para predecir valores futuros.
+   - Estos modelos fueron entrenados para realizar predicciones de **temperatura** y **humedad** en dos horizontes temporales: **7 días** y **30 días**.
+
+4. **Visualización de Resultados**:
+   - Se generaron gráficas que muestran las predicciones de ambos modelos para los próximos 7 días y 30 días. Estas visualizaciones permiten comparar cómo cada modelo anticipa los cambios en las variables ambientales.
+
+## Ejecución del Notebook
+
+Puedes ejecutar este notebook directamente en Google Colab utilizando el siguiente enlace:
+   <a href="https://colab.research.google.com/drive/1_uYBmQjpQJzwA--yjPdgqisv1zUz8VJq?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -211,6 +242,8 @@ Sin embargo, una conclusión clave derivada de este trabajo es que **la cantidad
 - **Ampliar el conjunto de datos**: Es crucial aumentar la cantidad y la variedad de los datos disponibles, especialmente para cubrir una mayor cantidad de muestras y condiciones ambientales. Esto proporcionará a los modelos un conjunto de entrenamiento más robusto que les permita hacer predicciones más precisas.
 - **Mejorar el preprocesamiento de datos**: Un enfoque más detallado en la limpieza y generación de características puede ayudar a mejorar la precisión de los modelos.
 - **Evaluación con más métricas**: Incluir más métricas de evaluación para obtener una visión más clara del rendimiento de los modelos bajo diferentes escenarios.
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
