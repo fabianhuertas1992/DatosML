@@ -1,7 +1,5 @@
 # Introducción.
 
-Se realiza captura de fuentes de datos para realizar diferentes modelos de aprendizaje. 
-
 Este proyecto captura y utiliza diversas fuentes de datos para desarrollar modelos de aprendizaje automático enfocados en la predicción de biomasa aérea (AGB) en áreas geográficas.
 
 En este proyecto se utiliza **machine learning** para predecir la **biomasa aérea (AGB)** en áreas forestales, un indicador clave para la gestión de recursos naturales. A través de modelos como **Regresión Lineal**, **Random Forest** y **XGBoost**, se exploran técnicas que combinan datos geoespaciales, como el **NDVI** y el diámetro de los árboles (DAP), con la altura y el año de la muestra, para generar predicciones en polígonos de estudio.
